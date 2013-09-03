@@ -1,10 +1,8 @@
 body, html{
-
-background-image: url(img/sky.jpg);
-margin:0;
-padding:0;
-
-	}
+	background-image: url(img/sky.jpg);
+	margin:0;
+	padding:0;
+}
 
 .bunnies{
 	bottom: -10px;
