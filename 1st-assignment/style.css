@@ -4,6 +4,17 @@ body, html{
 	padding:0;
 }
 
+
+.seemore{
+
+	text-align: right;
+	color: white;
+	font-family: sans-serif;
+	font-size: x-large;
+	margin-right: 100px;
+	margin-top: 50px;
+}	
+
 .bunnies{
 	bottom: -10px;
 	position: fixed;
@@ -32,6 +43,17 @@ body, html{
 	height: 100px;
 }
 
+
+.wow{
+	width: 300px;
+	color: black;
+	font-family: sans-serif;
+	font-size: medium;
+	right: 100px;
+	top: 80px;
+	position: fixed;
+	line-height: 1.8em;
+}
 
 
 @media (max-width:500px){
@@ -97,4 +119,10 @@ body, html{
 
 @media (max-width:4800px){
 	#bunny16 {display: none;}
+	.wow{display: none;}
+}
+
+
+@media (min-width:4600px){
+	.seemore{display: none;}
 }
