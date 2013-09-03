@@ -4,7 +4,6 @@ body, html{
 	padding:0;
 }
 
-
 .seemore{
 
 	text-align: right;
@@ -16,25 +15,25 @@ body, html{
 }	
 
 .bunnies{
-	bottom: -10px;
+	bottom: 32px;
 	position: fixed;
-	height: 200px;
-	width: 100%;
+	height: 120px;
+	
 }
+
 .allbunny{
 	padding-left:206px;
 	
 }
 
-
-
 .grass{
 	bottom: -20px;
-	Left:-4px;
+	left: -4px;
 	position: fixed;
 	width: 100%;
 	height: 100px;
 }
+
 #grass2{
 	bottom: -20px;
 	left:2000px;
@@ -42,7 +41,6 @@ body, html{
 	width: 100%;
 	height: 100px;
 }
-
 
 .wow{
 	width: 300px;
@@ -68,44 +66,44 @@ body, html{
 	#bunny3 {display: none;}
 }
 
-@media (max-width:1100px){
+@media (max-width:1400px){
 	#bunny4 {display: none;}
 }
 
-@media (max-width:1400px){
+@media (max-width:1700px){
 	#bunny5 {display: none;}
 }
 
-@media (max-width:1700px){
+@media (max-width:2000px){
 	#bunny6 {display: none;}
 }
 
-@media (max-width:2000px){
+@media (max-width:2300px){
 	#bunny7 {display: none;}
 	#grass2 {display: none;}
 }
 
-@media (max-width:2300px){
+@media (max-width:2600px){
 	#bunny8 {display: none;}
 }
 
-@media (max-width:2600px){
+@media (max-width:2900px){
 	#bunny9 {display: none;}
 }
 
-@media (max-width:2900px){
+@media (max-width:3200px){
 	#bunny10 {display: none; margin-bottom:15px;}
 }
 
-@media (max-width:3200px){
+@media (max-width:3500px){
 	#bunny11 {display: none;}
 }
 
-@media (max-width:3600px){
+@media (max-width:3800px){
 	#bunny12 {display: none;}
 }
 
-@media (max-width:3900px){
+@media (max-width:4100px){
 	#bunny13 {display: none;}
 }
 
@@ -113,16 +111,15 @@ body, html{
 	#bunny14 {display: none;}
 }
 
-@media (max-width:4500px){
+@media (max-width:4400px){
 	#bunny15 {display: none;}
 }
 
-@media (max-width:4800px){
+@media (max-width:4700px){
 	#bunny16 {display: none;}
 	.wow{display: none;}
 }
 
-
-@media (min-width:4600px){
+@media (min-width:4700px){
 	.seemore{display: none;}
 }
