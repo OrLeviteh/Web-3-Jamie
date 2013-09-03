@@ -46,6 +46,17 @@ padding:0;
 }
 
 
+.wow{
+	width: 300px;
+	color: black;
+	font-family: sans-serif;
+	font-size: medium;
+	right: 100px;
+	top: 80px;
+	position: fixed;
+	line-height: 1.8em;
+}
+
 
 @media (max-width:500px){
 	#bunny1 {display: none;}
@@ -110,6 +121,7 @@ padding:0;
 
 @media (max-width:4800px){
 	#bunny16 {display: none;}
+	.wow{display: none;}
 }
 
 
