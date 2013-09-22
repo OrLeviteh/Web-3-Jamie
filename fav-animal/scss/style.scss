@@ -1,0 +1,103 @@
+$bluefb:  #186be0;
+$wstrip: rgba(255,255,255,0.77);
+$tblack: rgba(0,0,0,0.67);
+$twhite: rgba(255,255,255,0.50);
+
+
+body, html {
+	background-image: url(../img/sky.jpg);
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+}
+
+.dstrip{
+background-color:  	$bluefb;
+	
+}
+.main{
+	position: relative;
+	padding-top: 10%;
+}
+
+h1{
+	color: 	$tblack;
+	text-align: center;
+	font-size: 5rem;
+	padding-bottom: 0;
+	margin-bottom: -1.1rem;
+	padding-right: 2rem;
+	position:  relative;
+	margin-right: 0;
+	margin-left: 2rem;
+
+	.onebunny{
+	position: relative;
+	margin-bottom: -0.4rem;
+	text-align: center;
+	
+	}
+
+
+}
+
+.wstrip{
+	
+	background-color: $wstrip;
+/* 	height: 10%; */
+	min-height: 3em;
+	text-align: center;
+	font-weight: bold;
+	color: $tblack;
+//	height: (1080/100)%;
+	
+}
+
+.best{
+	padding-top: 1rem;
+	font-size: 1rem;
+}
+
+.textbox{
+	
+	background-color: $twhite;
+	height: 20%;
+	margin-top: 0.15rem;
+	min-height: 8rem;
+	text-align: center;
+	
+	p{
+		width: 50%;
+		padding-left: 25%;
+		text-align: left;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		margin-top: 0;
+		line-height: 1.5rem;
+
+	}
+}
+
+@media (max-width:700px){
+	.textbox p{
+		padding-left: 10%;
+		width: 80%;}
+}
+
+@media (max-width:450px){
+	.textbox p{
+		padding-left: 10%;
+		width: 80%;}
+		.textbox{min-height: 11rem;}
+}
+
+
+/*
+.grass{
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+}
+
+*/
