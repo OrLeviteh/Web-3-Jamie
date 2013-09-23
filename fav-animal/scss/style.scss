@@ -1,8 +1,18 @@
-$bluefb:  #186be0;
+//css reset
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+//my code
+
+$bluefb: #186be0;
 $wstrip: rgba(255,255,255,0.77);
 $tblack: rgba(0,0,0,0.67);
+$tblackfade: rgba(0,0,0,0.40);
 $twhite: rgba(255,255,255,0.50);
 
+@mixin box-shadow($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+}
 
 body, html {
 	background-image: url(../img/sky.jpg);
@@ -13,8 +23,14 @@ body, html {
 
 .dstrip{
 background-color:  	$bluefb;
+min-height: 2rem;
+
+
+@include box-shadow(1 0 .10em .10em $tblackfade);
 	
 }
+
+
 .main{
 	position: relative;
 	padding-top: 10%;
@@ -25,16 +41,18 @@ h1{
 	text-align: center;
 	font-size: 5rem;
 	padding-bottom: 0;
-	margin-bottom: -1.1rem;
+	margin-bottom: -0.75rem;
 	padding-right: 2rem;
 	position:  relative;
 	margin-right: 0;
 	margin-left: 2rem;
+	
 
 	.onebunny{
 	position: relative;
-	margin-bottom: -0.4rem;
+	margin-bottom: -0.3rem;
 	text-align: center;
+	
 	
 	}
 
@@ -50,12 +68,16 @@ h1{
 	font-weight: bold;
 	color: $tblack;
 //	height: (1080/100)%;
+@include box-shadow(1 0 .10em .10em $tblackfade);
+
+ 
 	
 }
 
 .best{
 	padding-top: 1rem;
 	font-size: 1rem;
+	
 }
 
 .textbox{
@@ -65,6 +87,8 @@ h1{
 	margin-top: 0.15rem;
 	min-height: 8rem;
 	text-align: center;
+	margin-bottom:2rem;
+	@include box-shadow(1 0 .10em .10em $tblackfade);
 	
 	p{
 		width: 50%;
@@ -74,6 +98,7 @@ h1{
 		padding-bottom: 1rem;
 		margin-top: 0;
 		line-height: 1.5rem;
+		font-size: 1rem;
 
 	}
 }
@@ -81,23 +106,49 @@ h1{
 @media (max-width:700px){
 	.textbox p{
 		padding-left: 10%;
-		width: 80%;}
+		width: 80%;
+		font-size: 1.2rem;}
+	.textbox{min-height: 11rem;}
+	.best{
+		padding-top: 1.2rem;
+		padding-bottom: 1.2rem;
+		font-size: 1.2rem;}
+		
 }
 
 @media (max-width:450px){
 	.textbox p{
 		padding-left: 10%;
-		width: 80%;}
-		.textbox{min-height: 11rem;}
+		width: 80%;
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+		}
+		
+	.textbox{min-height: 15rem;}
+
+	.best{
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		font-size: 1.5rem;}
+
+
 }
 
 
-/*
+
 .grass{
 	bottom: 0;
 	left: 0;
 	position: fixed;
-	width: 100%;
+	/* background-image: url(../img/grass.png) repeat-x; */
+
 }
 
-*/
+#grassimg{
+	height: 10%;
+		
+	}
+
+
+
+
