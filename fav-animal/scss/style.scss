@@ -18,7 +18,7 @@ body, html {
 	background-image: url(../img/sky.jpg);
 	margin:0;
 	padding:0;
-	font-family: sans-serif;
+	font-family: "Arial", sans-serif;
 }
 
 .dstrip{
@@ -33,7 +33,7 @@ min-height: 2rem;
 
 .main{
 	position: relative;
-	padding-top: 10%;
+	margin-top: ((120/1080)*100%);
 }
 
 h1{
@@ -41,7 +41,7 @@ h1{
 	text-align: center;
 	font-size: 5rem;
 	padding-bottom: 0;
-	margin-bottom: -0.75rem;
+	margin-bottom: -0.78rem;
 	padding-right: 2rem;
 	position:  relative;
 	margin-right: 0;
@@ -62,12 +62,11 @@ h1{
 .wstrip{
 	
 	background-color: $wstrip;
-/* 	height: 10%; */
-	min-height: 3em;
 	text-align: center;
 	font-weight: bold;
 	color: $tblack;
-//	height: (1080/100)%;
+	min-height: 3em;
+
 @include box-shadow(1 0 .10em .10em $tblackfade);
 
  
@@ -91,8 +90,9 @@ h1{
 	@include box-shadow(1 0 .10em .10em $tblackfade);
 	
 	p{
-		width: 50%;
-		padding-left: 25%;
+		width:37%;
+		margin-left:auto;
+		margin-right:auto;
 		text-align: left;
 		padding-top: 1rem;
 		padding-bottom: 1rem;
@@ -103,9 +103,35 @@ h1{
 	}
 }
 
-@media (max-width:700px){
+.grass{
+
+	bottom: 0;
+	left: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	position: fixed;
+	background-image: url(../img/grass.png);
+	background-repeat:repeat-x;
+	min-height: 40px;
+	height: 10%;
+	width: 100%;
+
+}
+
+
+@media (max-width:956px){
 	.textbox p{
-		padding-left: 10%;
+		margin-left:auto;
+		margin-right:auto;
+		width: 50%;}
+
+}
+
+@media (max-width:700px){
+	.wstrip{height: 3.5rem;}
+	.textbox p{
+		margin-left:auto;
+		margin-right:auto;
 		width: 80%;
 		font-size: 1.2rem;}
 	.textbox{min-height: 11rem;}
@@ -118,7 +144,8 @@ h1{
 
 @media (max-width:450px){
 	.textbox p{
-		padding-left: 10%;
+		margin-left:auto;
+		margin-right:auto;
 		width: 80%;
 		font-size: 1.5rem;
 		line-height: 1.8rem;
@@ -127,28 +154,37 @@ h1{
 	.textbox{min-height: 15rem;}
 
 	.best{
-		padding-top: 1.5rem;
-		padding-bottom: 1.5rem;
+		padding-top: 1.1rem;
+		
 		font-size: 1.5rem;}
 
 
 }
 
+@media only screen and (min-device-width : 320px) 
+and (max-device-width : 960px) {
 
 
-.grass{
-	bottom: 0;
-	left: 0;
-	position: fixed;
-	/* background-image: url(../img/grass.png) repeat-x; */
 
-}
-
-#grassimg{
-	height: 10%;
-		
+.textbox{
+	min-height:15rem;
+ 
+ p{
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	font-size:2rem;
+	line-height:2.2rem;}
 	}
 
+.best{
+	padding-top:1.1rem;
+	font-size:2.3rem}
+
+.wstrip{
+	height: 5rem;
+}
+}
 
 
 
