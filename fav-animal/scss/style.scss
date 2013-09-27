@@ -36,6 +36,21 @@ min-height: 2rem;
 	margin-top: ((120/1080)*100%);
 }
 
+#bunnies {
+position: fixed;
+display: inline;
+color: white;
+text-align: right;
+width:100px;
+height: 20px;
+margin-left: 0%;
+
+
+
+}
+
+
+
 h1{
 	color: 	$tblack;
 	text-align: center;
@@ -105,14 +120,14 @@ h1{
 
 .grass{
 
-	bottom: 0;
+	bottom: -20 !important;
 	left: 0;
-	padding-bottom: 0;
-	margin-top: 0;
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
 	position: fixed;
 	background-image: url(../img/grass.png);
 	background-repeat:repeat-x;
-	min-height: 40px;
+	min-height: 60px;
 	height: 10%;
 	width: 100%;
 
