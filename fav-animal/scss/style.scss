@@ -8,6 +8,7 @@ $tblack: rgba(0,0,0,0.67);
 $tblackfade: rgba(0,0,0,0.40);
 $twhite: rgba(255,255,255,0.50);
 
+
 @mixin box-shadow($value) {
     -webkit-box-shadow: $value;
     -moz-box-shadow: $value;
@@ -22,11 +23,9 @@ body, html {
 }
 
 .dstrip{
-background-color:  	$bluefb;
-min-height: 2rem;
-
-
-@include box-shadow(1 0 .10em .10em $tblackfade);
+	background-color:  	$bluefb;
+	min-height: 2rem;
+	@include box-shadow(1 0 .10em .10em $tblackfade);
 	
 }
 
@@ -36,17 +35,122 @@ min-height: 2rem;
 	margin-top: ((120/1080)*100%);
 }
 
-#bunnies {
-position: fixed;
-display: inline;
-color: white;
-text-align: right;
-width:100px;
-height: 20px;
-margin-left: 0%;
+.bunnies {
+
+	color: white;
+	text-align: right;
+	font-size: 1rem;
+	position: inherit;
+	float: right;
+	font-weight: bold;
+	padding-right: 1rem;
+	padding-top: 0.8rem;
+	line-height: 0.5rem;
 
 
+	 &:after {  content:'Click the bunny';}
+}
 
+.is-clicked{
+	color: $wstrip;
+	text-align: right;
+	font-size: 1rem;
+	position: inherit;
+	float: right;
+	font-weight: normal;
+	padding-right: 1rem;
+	padding-top: 0.8rem;
+	line-height: 0.5rem;
+
+	&:after{content:'Hi!';}
+}
+
+.is-clicked2{
+	color: $wstrip;
+	text-align: right;
+	font-size: 1rem;
+	position: inherit;
+	float: right;
+	font-weight: normal;
+	padding-right: 1rem;
+	padding-top: 0.8rem;
+	line-height: 0.5rem;
+	&:after{content:'OoooooOooOOoh';}
+}
+
+.is-clicked3{
+	color: $wstrip;
+	text-align: right;
+	font-size: 1rem;
+	position: inherit;
+	float: right;
+	font-weight: normal;
+	padding-right: 1rem;
+	padding-top: 0.8rem;
+	line-height: 0.5rem;
+	&:after{content:'Huhh??';}
+}
+
+.is-clicked4{
+	color: $wstrip;
+	text-align: right;
+	font-size: 1rem;
+	position: inherit;
+	float: right;
+	font-weight: normal;
+	padding-right: 1rem;
+	padding-top: 0.8rem;
+	line-height: 0.5rem;
+
+	&:after{content:"I'm upside down";}
+}
+
+.is-clicked5 {
+
+	color: $wstrip;
+	text-align: right;
+	font-size: 1rem;
+	position: inherit;
+	float: right;
+	font-weight: normal;
+	padding-right: 1rem;
+	padding-top: 0.8rem;
+	line-height: 0.5rem;
+
+
+	 &:after {  content:'I have a bra on my head.';}
+}
+
+
+#bra{
+//opacity: 1;
+//transition:all 500ms ease-in-out;
+//transition-delay:500ms;
+}
+
+#hi{
+display: none;
+//opacity: 0;
+//transition:all 500ms ease-in-out;
+//transition-delay:500ms;
+}
+
+#head{
+display: none;
+//opacity: 0;
+//transition:all 500ms ease-in-out;
+}
+
+#upside{
+display: none;
+//opacity: 0;
+//transition:all 500ms ease-in-out;
+}
+
+#ooh{
+display: none;
+//opacity: 0;
+//transition:all 500ms ease-in-out;
 }
 
 
@@ -60,15 +164,15 @@ h1{
 	padding-right: 2rem;
 	position:  relative;
 	margin-right: 0;
-	margin-left: 2rem;
+	margin-left: 5rem;
 	
 
 	.onebunny{
-	position: relative;
+	//position: absolute;
 	margin-bottom: -0.3rem;
 	text-align: center;
-	
-	
+    transition:all 500ms ease-in-out;
+
 	}
 
 
