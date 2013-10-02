@@ -1,0 +1,555 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@keyframes fadeoutbunny {
+  0% {
+    display: inline;
+    opacity: 1;
+  }
+
+  5% {
+    display: none;
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeoutbunny {
+  0% {
+    display: inline;
+    opacity: 1;
+  }
+
+  5% {
+    display: none;
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeinbunny {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  5% {
+    display: inline;
+  }
+
+  100% {
+    display: inline;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeinbunny {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  5% {
+    display: inline;
+  }
+
+  100% {
+    display: inline;
+    opacity: 1;
+  }
+}
+
+@keyframes fadebunny {
+  0% {
+    display: inline;
+    opacity: 1;
+  }
+
+  1% {
+    display: none;
+  }
+
+  25% {
+    display: none;
+    opacity: 0;
+  }
+
+  50% {
+    display: none;
+    opacity: 0;
+  }
+
+  51% {
+    display: inline;
+  }
+
+  100% {
+    display: inline;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadebunny {
+  0% {
+    display: inline;
+    opacity: 1;
+  }
+
+  1% {
+    display: none;
+  }
+
+  25% {
+    display: none;
+    opacity: 0;
+  }
+
+  50% {
+    display: none;
+    opacity: 0;
+  }
+
+  51% {
+    display: inline;
+  }
+
+  100% {
+    display: inline;
+    opacity: 1;
+  }
+}
+
+@keyframes fadebunny2 {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: inline;
+  }
+
+  25% {
+    display: inline;
+    opacity: 1;
+  }
+
+  50% {
+    display: inline;
+    opacity: 1;
+  }
+
+  51% {
+    display: none;
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadebunny2 {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: inline;
+  }
+
+  25% {
+    display: inline;
+    opacity: 1;
+  }
+
+  50% {
+    display: inline;
+    opacity: 1;
+  }
+
+  51% {
+    display: none;
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+body, html {
+  background-image: url(../img/sky.jpg);
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.dstrip {
+  background-color: #186be0;
+  min-height: 2rem;
+  -webkit-box-shadow: 1 0 0.1em 0.1em rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1 0 0.1em 0.1em rgba(0, 0, 0, 0.4);
+  box-shadow: 1 0 0.1em 0.1em rgba(0, 0, 0, 0.4);
+}
+
+.main {
+  position: relative;
+  margin-top: 11.11111%;
+}
+
+/*
+.bunnies {
+
+	color: white;
+	text-align: right;
+	font-size: 1rem;
+	position: inherit;
+	float: right;
+	font-weight: bold;
+	padding-right: 1rem;
+	padding-top: 0.8rem;
+	line-height: 0.5rem;
+   
+
+	 &:after {  content:'Click the bunny';}
+}
+
+.is-clicked{
+	color: $wstrip;
+	text-align: right;
+	font-size: 1rem;
+	position: inherit;
+	float: right;
+	font-weight: normal;
+	padding-right: 1rem;
+	padding-top: 0.8rem;
+	line-height: 0.5rem;
+
+	&:after{content:'Hi!';}
+}
+
+.is-clicked2{
+	color: $wstrip;
+	text-align: right;
+	font-size: 1rem;
+	position: inherit;
+	float: right;
+	font-weight: normal;
+	padding-right: 1rem;
+	padding-top: 0.8rem;
+	line-height: 0.5rem;
+	&:after{content:'OoooooOooOOoh';}
+}
+
+.is-clicked3{
+	color: $wstrip;
+	text-align: right;
+	font-size: 1rem;
+	position: inherit;
+	float: right;
+	font-weight: normal;
+	padding-right: 1rem;
+	padding-top: 0.8rem;
+	line-height: 0.5rem;
+	&:after{content:'Huhh??';}
+}
+
+.is-clicked4{
+	color: $wstrip;
+	text-align: right;
+	font-size: 1rem;
+	position: inherit;
+	float: right;
+	font-weight: normal;
+	padding-right: 1rem;
+	padding-top: 0.8rem;
+	line-height: 0.5rem;
+
+	&:after{content:"I'm upside down";}
+}
+
+.is-clicked5 {
+
+	color: $wstrip;
+	text-align: right;
+	font-size: 1rem;
+	position: inherit;
+	float: right;
+	font-weight: normal;
+	padding-right: 1rem;
+	padding-top: 0.8rem;
+	line-height: 0.5rem;
+
+
+	 &:after {  content:'I have a bra on my head.';}
+}
+*/
+#bra {
+  /*
+      -webkit-animation-duration: 1s ;
+      -webkit-animation-name: fadeoutbunny;
+      animation-duration: 1s ;
+      animation-name: fadeoutbunny;
+      
+  */
+  /*
+     animation:bunnyfade 5s infinite;
+     -webkit-animation:bunnyfade 5s infinite;
+  */
+  /*
+     animation:bunnyfade 5s ;
+     -webkit-animation:bunnyfade 5s ;
+  */
+  opacity: 0;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: fadeinbunny;
+  animation-duration: 5s;
+  animation-name: fadeinbunny;
+ /*
+   
+    -webkit-animation-duration: 5s infinite;
+    -webkit-animation-name: fadebunny;
+    animation-duration: 5s infinite;
+    animation-name: fadebunny;
+    
+ 
+*/
+ /*
+   -webkit-animation-duration: 5s ;
+    -webkit-animation-name: fadebunny;
+    animation-duration: 5s ;
+    animation-name: fadebunny;
+*/
+}
+
+#hi {
+  opacity: 0;
+  display: none;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: fadeinbunny;
+  animation-duration: 5s;
+  animation-name: fadeinbunny;
+}
+#hi:after {
+  opacity: 1;
+}
+
+#ooh {
+  opacity: 0;
+  animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: fadeinbunny;
+  animation-duration: 5s;
+  animation-name: fadeinbunny;
+}
+
+#upside {
+  opacity: 0;
+  animation-delay: 9s;
+  -webkit-animation-delay: 9s;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: fadeinbunny;
+  animation-duration: 5s;
+  animation-name: fadeinbunny;
+}
+
+#head {
+  opacity: 0;
+  animation-delay: 12s;
+  -webkit-animation-delay: 12s;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: fadeinbunny;
+  animation-duration: 5s;
+  animation-name: fadeinbunny;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.67);
+  text-align: center;
+  font-size: 5rem;
+  padding-bottom: 0;
+  margin-bottom: -0.78rem;
+  padding-right: 2rem;
+  position: relative;
+  margin-right: 0;
+  margin-left: 5rem;
+}
+h1 .onebunny {
+  margin-bottom: -0.3rem;
+  text-align: center;
+  transition: all 500ms ease-in-out;
+}
+
+.wstrip {
+  background-color: rgba(255, 255, 255, 0.77);
+  text-align: center;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.67);
+  min-height: 3em;
+  -webkit-box-shadow: 1 0 0.1em 0.1em rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1 0 0.1em 0.1em rgba(0, 0, 0, 0.4);
+  box-shadow: 1 0 0.1em 0.1em rgba(0, 0, 0, 0.4);
+}
+
+.best {
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+.textbox {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 20%;
+  margin-top: 0.15rem;
+  min-height: 8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 1 0 0.1em 0.1em rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1 0 0.1em 0.1em rgba(0, 0, 0, 0.4);
+  box-shadow: 1 0 0.1em 0.1em rgba(0, 0, 0, 0.4);
+}
+.textbox p {
+  width: 37%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 0;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.grass {
+  bottom: -20px !important;
+  bottom: -20px;
+  left: 0;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  position: fixed;
+  background-image: url(../img/grass.png);
+  background-repeat: repeat-x;
+  min-height: 60px;
+  height: 10%;
+  width: 100%;
+}
+
+@media (max-width: 956px) {
+  .textbox p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  .wstrip {
+    height: 3.5rem;
+  }
+
+  .textbox p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  .textbox {
+    min-height: 11rem;
+  }
+
+  .best {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 450px) {
+  .textbox p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .textbox {
+    min-height: 15rem;
+  }
+
+  .best {
+    padding-top: 1.1rem;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 960px) {
+  .textbox {
+    min-height: 15rem;
+  }
+  .textbox p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+
+  .best {
+    padding-top: 1.1rem;
+    font-size: 2.3rem;
+  }
+
+  .wstrip {
+    height: 5rem;
+  }
+}
