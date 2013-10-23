@@ -57,4 +57,4 @@ loadImagesDan();
 	}
 		
 checkImagesDan();
-setInterval(checkImagesDan, 60000);
+//setInterval(checkImagesDan, 60000);
