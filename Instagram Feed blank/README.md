@@ -6,7 +6,7 @@ It currently updates every 5 sec. Change that in the feed.js file.
 Set the tag you want by changing feed.php
 **if the RSS feed is empty the page will be empty!!**
 
-For a gallery of all the pictures with that tag:
+For a gallery that will last forever of all the pictures with that tag:
 GalleryOfAll.html pulls from Statigram = all images.
 It takes at least 10 min to upload a new image. 
 It currently requests a new pull every 2 min. Change that in the feedFull.js file.
