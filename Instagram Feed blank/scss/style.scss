@@ -1,0 +1,62 @@
+
+body{
+	font-family: Helvetica;
+	color: gray;
+}
+
+
+.headline{
+	width: 991px;
+	height: 200px;
+	background-color: #ddd0d0;
+	margin: 0 auto;
+	text-align: center;
+	h1{
+		font-size: xx-large;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		padding-top: 0.5 rem;
+		color: grey;
+	}
+}
+
+
+.imgbox{
+  z-index: 60 !important;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 1300px;
+  margin-bottom: 50px;
+}
+
+/*-----------------instagram feed----------------------------*/
+
+/*
+.instafeed {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1300px;  // use this to control how many images in a line
+	text-align: center;
+	
+}
+*/
+
+.instafeed img{
+
+	width: 300px;  // size of instagram output image
+	height: 300px;   // size of instagram output image
+	background-color: black;
+	border-style:solid;  //border for image
+	border-color: white;  //border color for image
+	border-width:1 em;
+	display: inline;  //makes the images all be in the same line
+	margin: 20px;
+}
+
+.instafeed div{
+
+	display: inline-block;
+	}

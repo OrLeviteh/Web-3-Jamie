@@ -19,53 +19,12 @@ function request(method, url, data, cb) {
 };
 
 
-/*
 
-function loadMoreImages() {
-	request("get","./feed.php",{},function(err,something,status,response) {
-		var json = JSON.parse(response.responseText);
-		
-		var imagesEl = document.querySelector(".instafeed");
-		for(var i=0;i<json.images.length;i++) {
-			var div = document.createElement("div");
-			div.innerHTML = json.images[i];
-			imagesEl.insertBefore(div,imagesEl.firstChild);
-		}
-	});
-}
-
-
-setInterval(loadMoreImages, 20000);
-loadMoreImages();
-*/
-//================================================DAN IS DOING STUFF HERE
 
 var previousMax = 0;
 var howManyTimes = 0;
 
-// LIMITING TO 20
 
-/*
-setInterval(function divRemoverPowerAwesomer(){
-	
-	var dividends = document.getElementsByClassName("cuteBunnyImages")
-	
-for(var i = 0; i < dividends.length; i++)
-{
-   //Distribute(dividends.item(i));
-   if (i > 9){
-	   dividends[i].parentNode.removeChild(dividends[i]);
-	   
-   }
-}
-	
-	console.log(dividends.length);
-	
-}, 1);
-*/
-
-
-//END LIMIT
 
 function checkImagesDan() {
 	
@@ -79,7 +38,7 @@ function checkImagesDan() {
 		//console.log('previous' + previousMax);
 		
 		function loadImagesDan(){
-			if (json.images.length > 19){ 
+			if (json.images.length > 19){   //loads the last 20 images (last according to messy instagram)
 		      
 			
 			for(var i=19;i>=0;i--) {
@@ -101,7 +60,7 @@ function checkImagesDan() {
 			
 			
 			function replaceImagesDan(){
-			var divs = document.getElementsByClassName("cuteBunnyImages")
+			var divs = document.getElementsByClassName("cuteBunnyImages")  //check for new images and add and replace
 			
 			if (previousMax==20) {			 
 				for(var i=19;i>=0;i--) {
@@ -132,49 +91,10 @@ function checkImagesDan() {
 			} else{
 				replaceImagesDan();
 			}
-			//replaceImagesDan();
-				
-				
-			
-/*if (json.images.length > previousMax){
-					for(var i=(json.images.length - previousMax-1);i>=0;i--) {
-				var div = document.createElement("div");
-				var idn = json.images.indexOf(json.images)
-				div.setAttribute("class", "cuteBunnyImages");
-				div.innerHTML = json.images[i];
-				imagesEl.insertBefore(div,imagesEl.firstChild);
-				}	
-			
-					previousMax = json.images.length;
-					//divRemoverPowerAwesomer();					
-			}	*/		
+	
 		});		
 	}
 		
 checkImagesDan();
-setInterval(checkImagesDan, 5000);
-
-//checkImagesDan();
-//setInterval(checkImagesDan, 3000);
-
-
-
-
-//================================================dan is done, carry on
-
-/*
-setInterval(function(){
-
-console.log('yay');
-
-
- }, 3000);
-*/
-
-/*
-Ask him this. The function "request" creates a set number of images.length. However, this number is not consistent and images added to instagram are not, in turn, added as a number in the "length". Is there a way to make the "request" function simply add to images.length when an image is added?
-
-Check console, the numbers are not consistent. They change drastically.
-*/
-
+setInterval(checkImagesDan, 5000);   //checks for new images every 5 sec
 

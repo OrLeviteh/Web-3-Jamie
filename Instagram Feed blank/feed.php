@@ -4,7 +4,7 @@
 	include_once('./autoloader.php');
 	include_once('./idn/idna_convert.class.php');
 
-	$tag = "tamiyakir";
+	$tag = "cats"; // this is where you put the tag you want: no hashtag needed
 	$url = "http://instagram.com/tags/{$tag}/feed/recent.rss";
 
 //	SimplePie_Misc::output_javascript();
