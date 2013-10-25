@@ -3,7 +3,8 @@ Hey all!
 For a live constant event: 
 LiveFeed.html pulls from instagram - 20 newest images (at least according to them, might not have 20) 
 It currently updates every 5 sec. Change that in the feed.js file. 
-Set the tag you want by changing feed.php 
+Set the tag you want by changing feed.php.
+
 *if the RSS feed is empty the page will be empty!!*
 
 For a gallery that will last forever of all the pictures with that tag: 
