@@ -15,3 +15,7 @@ Set the tag you want by changing feedFull.php
 
 Thank you to Jamie for getting the request working for me. 
 Thank you to Dan for thinking of using Statigram for the Gallery!
+
+Oh yeah - This uses a library for the xml pull request which means it might not work on servers that use communal servers (Like my Bluehost)
+So use AWS or some other one that allows it.
+(:
