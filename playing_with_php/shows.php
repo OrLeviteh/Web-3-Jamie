@@ -11,7 +11,7 @@
 	//header('Access-Control-Origin: *');
 	//header('Content-Type: application/json');
 	
-?> Showing only current shows out of the array:<br><?php
+?> <b>Showing only current shows out of the array of 5 shows:<br></b><?php
 	
 	
 foreach($shows as $show=>$name) {
@@ -19,19 +19,19 @@ foreach($shows as $show=>$name) {
 	
 		
 		if (in_array('Yes', $content)) {
-					echo $title; ?> <br>  <?php
+					?>*<?php echo $title; ?> <br>  <?php
 					}
 	}
 
 }
 
 
-?> <br> <br> <br>  The Entire Array: <br><?php
+?> <br> <br> <br>  <b>The Entire Array: <br></b><?php
 
 echo json_encode($shows);
 
 
-?>Code is <a href="">HERE</a><?php
+?> <br> <br> <br>  Code is <a href="https://github.com/OrLeviteh/Web-3-Jamie/blob/master/playing_with_php/shows.php" target="_blank">HERE</a><?php
 
 
 
