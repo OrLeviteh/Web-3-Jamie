@@ -1,3 +1,13 @@
+<style>
+
+body{
+	font-family: sans-serif;
+	line-height: 1.7rem;
+}
+</style>
+
+
+
 <?php
 	$shows = array();
 	$shows['Shows'] = array(
@@ -8,10 +18,7 @@
 		'Modern Family'=>array('Currently Running'=>'Yes','Genere'=>'Drama','Network'=>'ABC','Actors'=>array("Ed O'Neill",'Sofía Vergara','Julie Bowen'))
 );
 
-	//header('Access-Control-Origin: *');
-	//header('Content-Type: application/json');
-	
-?> <b>Showing only current shows out of the array of 5 shows:<br></b><?php
+?> <b>Showing ONLY current shows out of the array of 5 shows:<br></b><?php
 	
 	
 foreach($shows as $show=>$name) {
@@ -31,7 +38,7 @@ foreach($shows as $show=>$name) {
 echo json_encode($shows);
 
 
-?> <br> <br> <br>  Code is <a href="https://github.com/OrLeviteh/Web-3-Jamie/blob/master/playing_with_php/shows.php" target="_blank">HERE</a><?php
+?> <br> <br> <br>  Code is <a href="https://github.com/OrLeviteh/Web-3-Jamie/blob/master/playing_with_php/shows.php" target="_blank">HERE</a><br> Yay!<?php
 
 
 
