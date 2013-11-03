@@ -6,7 +6,9 @@ body{
 }
 </style>
 
+<?php include('header.php'); ?>
 
+<h1>Current Shows</h1>
 
 <?php
 	$shows = array();
@@ -37,13 +39,11 @@ foreach($shows as $show=>$name) {
 
 echo json_encode($shows);
 
-
-?> <br> <br> <br>  Code is <a href="https://github.com/OrLeviteh/Web-3-Jamie/blob/master/playing_with_php/shows.php" target="_blank">HERE</a><br> Yay!<?php
-
-
-
-
-
+ 
+ include('footer.php'); 
+ 
+ 
+ 
 /*
 	
 foreach($shows as $show=>$name) {
