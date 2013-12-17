@@ -1,0 +1,13 @@
+Why is this not syncing up to GitHub?
+
+
+ Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#   (commit or discard the untracked or modified content in submodules)
+#
+#	modified:   Final/octo/octopress1 (modified content, untracked content)
+#	modified:   Final/octo/octopresscopy2 (modified content, untracked content)
+
+
+What is untracked content?
