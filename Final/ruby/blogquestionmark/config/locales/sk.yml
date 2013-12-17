@@ -1,0 +1,167 @@
+sk:
+  refinery:
+    plugins:
+      refinerycms_blog:
+        title: Blog
+    blog:
+      admin:
+        categories:
+          category:
+            edit: Upraviť kategóriu
+            delete: Zmazať kategóriu
+          index:
+            no_items_yet: 'Nie sú vytvorené žiadne kategórie. Klikni "%{create}" pre pridanie prvej.'
+        comments:
+          approved: 'Komentár od "%{author}" bol schválený.'
+          comment:
+            view_live_html: 'Zobraziť živý náhľad <br/><em>(otvorí nové okno)</em>'
+            read: Zobraziť komentár
+            reject: Zamietnuť komentár
+            approve: Schváliť
+          rejected: 'Komentár od "%{author}" bol zamietnutý.'
+          index:
+            no_items_yet: 'Nie sú žiadne %{type} komentáre.'
+          show:
+            comment: Komentár
+            blog_post: Blog článok
+            from: Odoslal
+            date: Dátum
+            message: Správa
+            details: Detaily
+            age: Vek
+            actions: Akcie
+            back: Späť na zoznam komentárov.
+            reject: Zamietnuť komentár
+            approve: Schváliť komentár
+        posts:
+          form:
+            toggle_advanced_options: Klikni pre prístup k nastaveniam meta tagov a menu
+            published_at: Dátum publikovania
+            custom_url: Vlastná url
+            custom_url_help: Generovať url pre blog článok z tohto textu namiesto názvu blog článku.
+            source_url: Url adresa zdroja informácií
+            source_url_help:  Url adresa zdroja informácií pre článok.
+            source_url_title: Názov zdroja informácii
+            source_url_title_help: Názov zdroja informácií pre zadanú url adresu zdroja informácií.
+            author: Autor
+            author_help: Vyber, ktorý používateľ bude zobrazený ako autor tohto článku.
+            copy_body: Skopírovať text článku do teaser.
+            copy_body_help: Skopíruje text článku do teaser. Nechaj teaser nevyplnený, ak chceš aby ho Refinery automaticky vygenerovalo.
+          index:
+            no_items_yet: 'Nie sú žiadne blog články. Klikni na "%{create}" pre pridanie prvého.'
+          uncategorized:
+            no_items_yet: 'Nie sú žiadne nezaradené články.'
+          post:
+            view_live_html: 'Zobraziť živý náhľad článku<br/><em>(otvorí sa v novom okne)</em>'
+            edit: Upraviť článok
+            delete: Zmazať článok
+        settings:
+          notification_recipients:
+            value: Poslať notifikáciu pre
+            explanation: 'Vždy keď niekto pridá komentár, Refinery pošle e-mail notifikáciu.'
+            hint: 'Vždy keď niekto pridá komentár, Refinery ti pošle e-mail notifikáciu.'
+            example: "Zadaj tvoju emailovú adresu(y) ako napríklad: jack@work.com, jill@office.com"
+            updated: 'Zoznam príjemcov notifikácií: "%{recipients}"'
+        submenu:
+          categories:
+            title: Kategórie
+            manage: Spravovať
+            new: Nová kategória
+          comments:
+            title: Komentáre
+            title_with_count: 'Komentáre (%{new_count})'    #TODO 0 nových, 1 nový, 2-4 nové,  >= 5 nových
+            new: Nový
+            unmoderated: Nový
+            approved: Schválený
+            rejected: Zamietnutý
+          posts:
+            title: Články
+            manage: Spravovať články
+            new: Vytvoriť nový článok
+            uncategorized: Nezaradené články
+          settings:
+            title: Nastavenia
+            moderation: Moderovanie
+            update_notified: Upraviť zoznam notifikovaných
+            comments: Komentáre
+            teasers: Teasers
+      comment_mailer:
+        notification:
+          greeting: Ahoj
+          you_recieved_new_comment: Máš nový komentár na stránke
+          comment_starts: --- začiatok komentára ---
+          comment_ends: --- koniec komentára ---
+          from: Od
+          email: Email
+          message: Správa
+          closing_line: S pozdravom
+          ps: 'P.S. Všetky komentáre su uložené v sekcii "Blog" pod záložkou "Komentáre" v prípade ak by ich bolo potrebné zobraziť neskôr.'
+      shared:
+        categories:
+          title: Kategórie
+        rss_feed:
+          title: RSS zdroj článkov
+          subscribe: Prihlásiť k odberu
+        posts:
+          other: Ďaľšie články
+          created_at: 'Publikovaný %{when}'
+          read_more: Celý článok
+        comments:
+          singular: komentár
+          one: '%{count} komentár'
+          few: '%{count} komentáre'
+          other: '%{count} komentárov'
+          none: Nie sú tu žiadne komentáre
+        archives: Archív
+        tags:
+          title: Tagy
+      categories:
+        show:
+          no_posts: Momentálne tu nie sú žiadne články.
+      posts:
+        post:
+          filled_in: Zaradené do
+        comment: komentár
+        comments:
+          by: 'Odoslal %{who}'
+          time_ago: 'pred %{time}'
+          thank_you: 'Vďaka za komentár.'
+          thank_you_moderated: 'Ďakujeme za Váš komentár. Vaša správa čaká na schválenie a čoskoro sa objaví.'
+        index:
+          no_blog_articles_yet: Zatiaľ nie sú v blogu žiadne články. Zostaňte naladení.
+        show:
+          blog_home: Hlavná stránka blogu
+          comments:
+            title: Komentáre
+            add: Pridať komentár
+          other: Ďalšie články
+          filled_in: Zaradené do
+          submit: Odoslať komentár
+          name: Meno
+          email: E-mail
+          message: Správa
+          by: Od
+          source: Zdroj
+        tagged:
+          no_blog_articles_yet: 'Zatiaľ nie sú v blogu žiadne články. Zostaňte naladení.'
+          posts_tagged: Príspevky pre tag
+        archive:
+          blog_archive_for: 'Blog archív pre %{date}'
+          no_blog_articles_posted: 'Nie sú žiadne články publikované %{date}. Zostaňte naladení.'
+  activerecord:
+      models:
+        refinery/blog/category: Kategória
+        refinery/blog/comment: Komentár
+        refinery/blog/post: Blog článok
+      attributes:
+        refinery/blog/category:
+          title: Názov
+        refinery/blog/comment:
+          name: Meno
+          email: E-mail
+          message: Správa
+        refinery/blog/post:
+          title: Názov
+          body: Text
+          teaser: Teaser
+
